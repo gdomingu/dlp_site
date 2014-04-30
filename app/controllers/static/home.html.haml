@@ -1,0 +1,240 @@
+#wrapper
+  / start header
+  %header
+    .navbar.navbar-default.navbar-static-top
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "index.html"}
+            %span> M
+            oderna
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{href: "index.html"} Home
+            %li.dropdown
+              %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "dropdown", "data-toggle" => "dropdown", href: "#"}
+                Features
+                %b.icon-angle-down
+              %ul.dropdown-menu
+                %li
+                  %a{href: "typography.html"} Typography
+                %li
+                  %a{href: "components.html"} Components
+                %li
+                  %a{href: "pricingbox.html"} Pricing box
+            %li
+              %a{href: "portfolio.html"} Portfolio
+            %li
+              %a{href: "blog.html"} Blog
+            %li
+              %a{href: "contact.html"} Contact
+  / end header
+  %section#featured
+    / start slider
+    .container
+      .row
+        .col-lg-12
+          / Slider
+          #main-slider.flexslider
+            %ul.slides
+              %li
+                %img{alt: "", src: "img/slides/1.jpg"}/
+                .flex-caption
+                  %h3 Modern Design
+                  %p Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna
+                  %a.btn.btn-theme{href: "#"} Learn More
+              %li
+                %img{alt: "", src: "img/slides/2.jpg"}/
+                .flex-caption
+                  %h3 Fully Responsive
+                  %p Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.
+                  %a.btn.btn-theme{href: "#"} Learn More
+              %li
+                %img{alt: "", src: "img/slides/3.jpg"}/
+                .flex-caption
+                  %h3 Clean  Fast
+                  %p Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.
+                  %a.btn.btn-theme{href: "#"} Learn More
+          / end slider
+  %section.callaction
+    .container
+      .row
+        .col-lg-12
+          .big-cta
+            .cta-text
+              %h2
+                %span Moderna
+                HTML Business Template
+  %section#content
+    .container
+      .row
+        .col-lg-12
+          .row
+            .col-lg-3
+              .box
+                .box-gray.aligncenter
+                  %h4 Fully responsive
+                  .icon
+                    %i.fa.fa-desktop.fa-3x
+                  %p
+                    Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+                .box-bottom
+                  %a{href: "#"} Learn more
+            .col-lg-3
+              .box
+                .box-gray.aligncenter
+                  %h4 Modern Style
+                  .icon
+                    %i.fa.fa-pagelines.fa-3x
+                  %p
+                    Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+                .box-bottom
+                  %a{href: "#"} Learn more
+            .col-lg-3
+              .box
+                .box-gray.aligncenter
+                  %h4 Customizable
+                  .icon
+                    %i.fa.fa-edit.fa-3x
+                  %p
+                    Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+                .box-bottom
+                  %a{href: "#"} Learn more
+            .col-lg-3
+              .box
+                .box-gray.aligncenter
+                  %h4 Valid HTML5
+                  .icon
+                    %i.fa.fa-code.fa-3x
+                  %p
+                    Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+                .box-bottom
+                  %a{href: "#"} Learn more
+      / divider
+      .row
+        .col-lg-12
+          .solidline
+      / end divider
+      / Portfolio Projects
+      .row
+        .col-lg-12
+          %h4.heading Recent Works
+          .row
+            %section#projects
+              %ul#thumbs.portfolio
+                / Item Project and Filter Name
+                %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
+                  .item-thumbs
+                    / Fancybox - Gallery Enabled - Title - Full Image
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", href: "img/works/1.jpg", title: "Work 1"}
+                      %span.overlay-img
+                      %span.overlay-img-thumb.font-icon-plus
+                    / Thumb Image and Description
+                    %img{alt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.", src: "img/works/1.jpg"}
+                  / End Item Project
+                  / Item Project and Filter Name
+                  %li.item-thumbs.col-lg-3.design{"data-id" => "id-1", "data-type" => "icon"}
+                    / Fancybox - Gallery Enabled - Title - Full Image
+                    %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", href: "img/works/2.jpg", title: "Work 2"}
+                      %span.overlay-img
+                      %span.overlay-img-thumb.font-icon-plus
+                    / Thumb Image and Description
+                    %img{alt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.", src: "img/works/2.jpg"}
+                    / End Item Project
+                    / Item Project and Filter Name
+                    %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
+                      / Fancybox - Gallery Enabled - Title - Full Image
+                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", href: "img/works/3.jpg", title: "Work 3"}
+                        %span.overlay-img
+                        %span.overlay-img-thumb.font-icon-plus
+                      / Thumb Image and Description
+                      %img{alt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.", src: "img/works/3.jpg"}
+                      / End Item Project
+                      / Item Project and Filter Name
+                      %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
+                        / Fancybox - Gallery Enabled - Title - Full Image
+                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", href: "img/works/4.jpg", title: "Work 4"}
+                          %span.overlay-img
+                          %span.overlay-img-thumb.font-icon-plus
+                        / Thumb Image and Description
+                        %img{alt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.", src: "img/works/4.jpg"}
+                        / End Item Project
+          %footer
+            .container
+              .row
+                .col-lg-3
+                  .widget
+                    %h5.widgetheading Get in touch with us
+                    %address
+                      %strong Moderna company Inc
+                      %br
+                        Modernbuilding suite V124, AB 01
+                        %br
+                          Someplace 16425 Earth
+                        %p
+                          %i.icon-phone
+                          (123) 456-7890 - (123) 555-7891
+                          %br
+                            %i.icon-envelope-alt
+                            email@domainname.com
+                      .col-lg-3
+                        .widget
+                          %h5.widgetheading Pages
+                          %ul.link-list
+                            %li
+                              %a{href: "#"} Press release
+                            %li
+                              %a{href: "#"} Terms and conditions
+                            %li
+                              %a{href: "#"} Privacy policy
+                            %li
+                              %a{href: "#"} Career center
+                            %li
+                              %a{href: "#"} Contact us
+                      .col-lg-3
+                        .widget
+                          %h5.widgetheading Latest posts
+                          %ul.link-list
+                            %li
+                              %a{href: "#"} Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            %li
+                              %a{href: "#"} Pellentesque et pulvinar enim. Quisque at tempor ligula
+                            %li
+                              %a{href: "#"} Natus error sit voluptatem accusantium doloremque
+                      .col-lg-3
+                        .widget
+                          %h5.widgetheading Flickr photostream
+                          .flickr_badge
+                            %script{src: "http://www.flickr.com/badge_code_v2.gne?count=8&display=random&size=s&layout=x&source=user&user=34178660@N03", type: "text/javascript"}
+                          .clear
+                  #sub-footer
+                    .container
+                      .row
+                        .col-lg-6
+                          .copyright
+                            %p
+                              %span Moderna 2014 All right reserved. By
+                              %a{href: "http://bootstraptaste.com", target: "_blank"} Bootstraptaste
+                        .col-lg-6
+                          %ul.social-network
+                            %li
+                              %a{"data-placement" => "top", href: "#", title: "Facebook"}
+                                %i.fa.fa-facebook
+                            %li
+                              %a{"data-placement" => "top", href: "#", title: "Twitter"}
+                                %i.fa.fa-twitter
+                            %li
+                              %a{"data-placement" => "top", href: "#", title: "Linkedin"}
+                                %i.fa.fa-linkedin
+                            %li
+                              %a{"data-placement" => "top", href: "#", title: "Pinterest"}
+                                %i.fa.fa-pinterest
+                            %li
+                              %a{"data-placement" => "top", href: "#", title: "Google plus"}
+                                %i.fa.fa-google-plus
+              %a.scrollup{href: "#"}
+                %i.fa.fa-angle-up.active
