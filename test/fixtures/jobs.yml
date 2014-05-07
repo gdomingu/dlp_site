@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: jobs
+#
+#  id             :integer          not null, primary key
+#  first_name     :string(255)
+#  last_name      :string(255)
+#  email          :string(255)
+#  phone          :string(255)
+#  description    :string(255)
+#  workers_needed :integer
+#  date           :datetime
+#  english_level  :string(255)
+#  how_hear       :string(255)
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone: MyString
+  description: MyString
+  workers_needed: 1
+  date: 2014-05-06
+  english_level: MyString
+  how_hear: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  phone: MyString
+  description: MyString
+  workers_needed: 1
+  date: 2014-05-06
+  english_level: MyString
+  how_hear: MyString

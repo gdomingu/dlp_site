@@ -1,0 +1,24 @@
+%nav.navbar{role: "navigation", style:"margin-bottom:0px;"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-ex1-collapse", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      / You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it)
+      =link_to "SF Day Labor Program", root_path, :class => "navbar-brand"
+    / Collect the nav links, forms, and other content for toggling
+    .collapse.navbar-collapse.navbar-ex1-collapse
+      %ul.nav.navbar-nav.navbar-right
+
+        %li
+          =link_to "Hire", hire_path
+        %li
+          =link_to "Our Workers", workers_path
+        %li
+          =link_to "Contact", contact_path
+        %li
+          =link_to "FAQ", faq_path
+        %li
+          =link_to "About", about_path

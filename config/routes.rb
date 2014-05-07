@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
+  resources :jobs
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'static#home'
+
+  get '/about',   to: "static#about",   as: "about"
+  get '/contact', to: "static#contact", as: "contact"
+  get '/faq',     to: "static#faq",     as: "faq"
+  get '/workers', to: "static#workers", as: "workers"
+  get '/hire',    to: "jobs#new",       as: "hire"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

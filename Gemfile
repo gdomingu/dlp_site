@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0.rc1'
 gem 'pg'
 gem 'pry'
+gem 'bootstrap_form'
+gem 'annotate'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.1'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,6 +25,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+gem 'font-awesome-sass'
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development

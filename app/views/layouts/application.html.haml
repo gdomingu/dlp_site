@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %title= @title || 'Day Labor Program'
+    %meta{ :name => "description", :content => @description || "We are a worker-lead nonprofit committed to improving your life and the life of our members. We pride ourselves on having hard-working, reliable workers."}
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body
+    = render "layouts/top_navbar.html.haml"
+    = yield
+    = render "layouts/footer"
+

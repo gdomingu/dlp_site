@@ -1,0 +1,11 @@
+= bootstrap_form_for @job do |f|
+  = f.text_field :first_name
+  = f.text_field :last_name
+  = f.email_field :email
+  = f.phone_field :phone
+  = f.text_area :description
+  = f.number_field :workers_needed
+  = f.datetime_select :date
+  = f.select :english_level, options_for_select(["Basic English", "Fluent English", "Not Necessary"]), :include_blank => true
+  = f.select :how_hear, options_for_select(["Online", "Flier", "Friend", "TV"]), include_blank: true, label: "How did you hear about us?"
+  = f.submit "Submit"
